@@ -1,2 +1,3 @@
 # calculator
-Calculator in ReactJS with a basic backend in Express.js
+A simple Calculator app using React and Node/Express
+
