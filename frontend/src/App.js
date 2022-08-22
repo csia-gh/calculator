@@ -5,6 +5,8 @@ import Calculator from './components/Calculator/Calculator';
 
 import { ThemeContext } from './contexts/ThemeContext';
 
+import './App.css';
+
 function App() {
   const { theme } = useContext(ThemeContext);
 
