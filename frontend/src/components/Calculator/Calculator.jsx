@@ -15,6 +15,7 @@ function Calculator() {
   const [msg, setMsg] = useState();
   const [hasMsg, setHasMsg] = useState(false);
   const [timer, setTimer] = useState();
+  const [lastSavedValue, setLastSavedValue] = useState(null);
 
   const showMsg = (msgText, error = false) => {
     clearTimeout(timer);
@@ -39,6 +40,7 @@ function Calculator() {
     try {
       await Axios.post('api/calculator', { numValue: current });
       setIsPending(false);
+      setLastSavedValue(current);
       showMsg('Value has been saved');
     } catch (err) {
       setIsPending(false);
@@ -49,6 +51,13 @@ function Calculator() {
 
   const retrieveHandler = async () => {
     setIsPending(true);
+
+    if (lastSavedValue) {
+      setCurrent(lastSavedValue);
+      setIsPending(false);
+      showMsg('Saved data pasted');
+      return;
+    }
 
     try {
       const response = await Axios.get('api/calculator');
