@@ -13,47 +13,6 @@
   width: 100%;
 }
 
-.App {
-  min-height: 100vh;
-  background-color: #eee;
-  padding: 1px 0;
-
-  --calc-bg: #fff;
-  --memory-btn-bg: #efb0a1;
-  --memory-btn-color: #333;
-  --memory-btn-border-color: #efb0a1;
-  --operation-btn-bg: #ddd;
-  --operation-btn-color: #333;
-  --operation-btn-border-color: #d9d9d9;
-  --output-bg: #fff;
-  --output-color: #333;
-  --output-border-color: #eee;
-  --btn-bg: #f9f9f9;
-  --btn-color: #333;
-  --btn-border-color: #f5f5f5;
-  --loader-border: #ef946c;
-  --loader-border-top: #b9faf8;
-}
-
-.App.dark {
-  background-color: #003459;
-  --calc-bg: #131a26;
-  --memory-btn-bg: #23334e;
-  --memory-btn-color: #eee;
-  --memory-btn-border-color: #23334e;
-  --operation-btn-bg: #d81e5b;
-  --operation-btn-color: #eee;
-  --operation-btn-border-color: #d81e5b;
-  --output-bg: #131a26;
-  --output-color: #eee;
-  --output-border-color: #23334e;
-  --btn-bg: #23334e;
-  --btn-color: #eee;
-  --btn-border-color: #23334e;
-  --loader-border: #f3f3f3;
-  --loader-border-top: #3498db;
-}
-
 .container {
   max-width: 1200px;
   margin: auto;
