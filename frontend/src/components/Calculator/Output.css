@@ -1,0 +1,47 @@
+/* Output */
+.output {
+  height: auto;
+  min-height: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.625rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border: 2px solid var(--output-border-color);
+  border-radius: 0.1875rem;
+  background-color: var(--output-bg);
+  color: var(--output-color);
+}
+.output .previous-operand {
+  font-size: 0.8rem;
+  color: #80a4ed;
+}
+.output .current-operand {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 350px) {
+  .output {
+    min-height: 9.375rem;
+  }
+  .output .previous-operand {
+    font-size: 1.75rem;
+  }
+  .output .current-operand {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .output {
+    min-height: 8.25rem;
+  }
+  .output .previous-operand {
+    font-size: 1.5rem;
+  }
+  .output .current-operand {
+    font-size: 2.5rem;
+  }
+}
